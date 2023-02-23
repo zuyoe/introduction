@@ -1,12 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 const Header = ({ setPage, setOpen, open }) => {
+    const path = process.env.PUBLIC_URL;
     return (
         <header className="header">
             <div className="inner">
                 <nav className="nav">
                     <span className="header-logo" onClick={() => setPage(0)}>
-                        Tarolog Profile
+                        <img src={`${path}/images/zulogo.png`} alt="로고"></img>
                     </span>
                     <ul className="gnb">
                         <li onClick={() => setPage(0)}>
@@ -40,6 +41,7 @@ const Header = ({ setPage, setOpen, open }) => {
                             <FontAwesomeIcon icon={faBars} />
                         )}
                     </span>
+                    {/* <img src={`${path}/images/펄럭.png`} alt="로고"></img> */}
                 </nav>
             </div>
         </header>
