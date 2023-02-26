@@ -1,6 +1,7 @@
 import React from "react";
 
 const Skills = () => {
+  const path = process.env.PUBLIC_URL;
   return (
     <section className="skills scroll">
       <div className="inner">
@@ -19,7 +20,7 @@ const Skills = () => {
             </li>
             <li>
               <img
-                src="/images/skill-css.png"
+                src="{`${path}/images/profile_1.png`}"
                 alt="skill"
                 data-aos="fade-up"
                 data-aos-duration="300"
